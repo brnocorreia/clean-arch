@@ -19,7 +19,7 @@ class UserRegister(UserRegisterInterface):
     @classmethod
     def __validate_name(cls, first_name: str) -> None:
         if not first_name.isalpha():
-            raise Exception('Nome invalido para o cadastro')
+            raise Exception('Nome inválido para o cadastro')
 
         if len(first_name) > 18:
             raise Exception('Nome muito grande para o cadastro')
